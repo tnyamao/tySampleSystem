@@ -21,11 +21,11 @@ def main():
   instance = dht11.DHT11(pin = Temp_sensor)
 
   while True:
-        #get DHT11 sensor value
-        result = instance.read()
-  	#print"Temperature = ",result.temperature,"C"," Humidity = ",result.humidity,"%"
-  	print"Last valid input:",datetime.now().strftime("%Y/%m/%d %H:%M:%S"),"Temperature = ",result.temperature,"C"," Humidity = ",result.humidity,"%"
-  	time.sleep(1)
+    #get DHT11 sensor value
+    result = instance.read()
+    #print"Temperature = ",result.temperature,"C"," Humidity = ",result.humidity,"%"
+    print("Last valid input:",datetime.now().strftime("%Y/%m/%d %H:%M:%S"),"Temperature = ",result.temperature,"C"," Humidity = ",result.humidity,"%")
+    time.sleep(1)
 
 if __name__ == '__main__':
 
