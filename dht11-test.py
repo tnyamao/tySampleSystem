@@ -23,9 +23,10 @@ def main():
   while True:
     #get DHT11 sensor value
     result = instance.read()
-    #print"Temperature = ",result.temperature,"C"," Humidity = ",result.humidity,"%"
-    print("Last valid input:",datetime.now().strftime("%Y/%m/%d %H:%M:%S"),"Temperature = ",result.temperature,"C"," Humidity = ",result.humidity,"%")
-    time.sleep(1)
+    if result.temperature != 0:
+        #print"Temperature = ",result.temperature,"C"," Humidity = ",result.humidity,"%"
+        print("Last valid input:",datetime.now().strftime("%Y/%m/%d %H:%M:%S"),"Temperature = ",result.temperature,"C"," Humidity = ",result.humidity,"%")
+        time.sleep(1)
 
 if __name__ == '__main__':
 
