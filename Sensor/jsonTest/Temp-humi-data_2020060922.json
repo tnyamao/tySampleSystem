@@ -1,0 +1,17 @@
+{
+    "data1":{
+    "Date-time": "2020-06-09-22-12-10",
+    "Temperature": 25.5,
+    "Humidity": 56.3
+    },
+    "data2":{
+    "Date-time": "2020-06-09-22-13-10",
+    "Temperature": 22.5,
+    "Humidity": 53.5
+    },
+    "data3":{
+    "Date-time": "2020-06-09-22-13-10",
+    "Temperature": 26.0,
+    "Humidity": 56.0
+    }
+}
